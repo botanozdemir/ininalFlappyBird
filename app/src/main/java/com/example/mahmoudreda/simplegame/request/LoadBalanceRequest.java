@@ -6,16 +6,16 @@ package com.example.mahmoudreda.simplegame.request;
 
 public class LoadBalanceRequest {
 
-        private int amount;
+        private double amount;
         private String barcode;
         private int cashOfficeId;
         private String transactionId;
 
-    public int getAmount() {
+    public double getAmount() {
         return amount;
     }
 
-    public void setAmount(int amount) {
+    public void setAmount(double amount) {
         this.amount = amount;
     }
 

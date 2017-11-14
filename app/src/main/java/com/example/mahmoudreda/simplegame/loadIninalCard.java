@@ -10,7 +10,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.mahmoudreda.simplegame.listener.LoadBalanceListener;
 import com.example.mahmoudreda.simplegame.request.LoadBalanceRequest;
+import com.example.mahmoudreda.simplegame.response.LoadBalanceResponse;
 import com.example.mahmoudreda.simplegame.rest.RestClient;
 
 import java.util.Calendar;
@@ -21,7 +23,7 @@ import java.util.Calendar;
  * Created by botanozdemir on 13.11.2017.
  */
 
-public class loadIninalCard extends AppCompatActivity {
+public class loadIninalCard extends AppCompatActivity implements LoadBalanceListener {
 
     Button b1;
     private TextView mScore;
@@ -47,7 +49,7 @@ public class loadIninalCard extends AppCompatActivity {
     private View.OnFocusChangeListener editTextFocusChangeListener;
     private boolean nextButtonClicked;
     private View.OnClickListener textViewOnClickListener;
-//    private LoadBalanceListener loadBalanceListener;
+    private LoadBalanceListener loadBalanceListener;
     private int scorestr;
     private DialogFragment mProgressDialog;
     RestClient restClient;
@@ -71,7 +73,7 @@ public class loadIninalCard extends AppCompatActivity {
         scorestr = bundle.getInt("score");
         String score = String.valueOf(scorestr);
         mScore.setText("Skor: " + score + " Puan");
-        double amount = scorestr * 0.10;
+        final double amount = scorestr * 0.10;
         String amounrStr = String.valueOf(amount);
         mHint.setText("Kazancınız " + amounrStr + " TL dir. Her puan başına 10 kuruş kazanırsınız.");
         final LoadBalanceRequest loadBalanceRequest = new LoadBalanceRequest();
@@ -84,7 +86,9 @@ public class loadIninalCard extends AppCompatActivity {
                     Toast.makeText(loadIninalCard.this, "Geçersiz bir barkod numarası girdiniz!", Toast.LENGTH_SHORT).show();
                 }
                 else {
-//                restClient.loadBalance(loadBalanceListener, loadBalanceRequest);
+                    loadBalanceRequest.setAmount(amount);
+                    loadBalanceRequest.setBarcode(mSecretSurnameEditText.getText().toString());
+                restClient.loadBalance(loadBalanceListener, loadBalanceRequest);
                     Intent intent = new Intent(getApplicationContext(), SuccessActivity.class);
                     startActivity(intent);
                 }
@@ -93,16 +97,13 @@ public class loadIninalCard extends AppCompatActivity {
         });
     }
 
-//    @Override
-//    public void loadBalanceConnectionStart() {
-//
-//    }
-//
-//    @Override
-//    public void loadBalanceConnectionEnd(BaseResponse<LoadBalanceResponse> baseResponse) {
-//
-//        if (baseResponse.isSuccessful()) {
-//
-//        }
-//    }
+    @Override
+    public void loadBalanceConnectionStart() {
+
+    }
+
+    @Override
+    public void loadBalanceConnectionEnd(LoadBalanceResponse baseResponse) {
+
+    }
 }

@@ -2,7 +2,11 @@ apply plugin: 'com.android.application'
 
 android {
     useLibrary 'org.apache.http.legacy'
-
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
     compileSdkVersion 23
     buildToolsVersion '25.0.0'
 
@@ -21,6 +25,7 @@ android {
     }
 }
 
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
@@ -28,4 +33,8 @@ dependencies {
     compile 'com.android.support:design:23.2.1'
     compile 'commons-codec:commons-codec:1.10'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'org.apache.httpcomponents:httpclient-android:4.3.3'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.6.0'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.6.0'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.6.0'
 }
