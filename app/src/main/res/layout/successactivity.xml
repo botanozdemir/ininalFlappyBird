@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_margin_medium"
+    android:orientation="vertical"
+    android:background="@color/background_gray">
+
+    <ImageView
+        android:layout_width="@dimen/icon_transfer_success_size"
+        android:layout_height="@dimen/icon_transfer_success_size"
+        android:src="@drawable/icon_transfer_success"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/successMessageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_margin_medium"
+        android:gravity="center_horizontal"
+        android:text="Oyun puanlarınız ininal kartınıza başarıyla yatırılmıştır."
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_largest"/>
+    <Button
+        android:id="@+id/newMoneyTransferButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_blue_button_background_normal"
+        android:onClick="onNewTransferButtonClick"
+        android:text="Anasayfaya Dön"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_medium" />
+
+</LinearLayout>

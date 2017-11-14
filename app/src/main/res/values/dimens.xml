@@ -1,0 +1,80 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+<!-- Reusable dimensions start -->
+<dimen name="activity_margin_large">24dp</dimen>
+<dimen name="activity_margin_medium">16dp</dimen>
+<dimen name="activity_margin_small">8dp</dimen>
+<dimen name="activity_horizontal_margin_large">24dp</dimen>
+<dimen name="activity_horizontal_margin_medium">16dp</dimen>
+<dimen name="activity_horizontal_margin_small">8dp</dimen>
+<dimen name="activity_vertical_margin_large">24dp</dimen>
+<dimen name="activity_vertical_margin_medium">16dp</dimen>
+<dimen name="activity_vertical_margin_small">8dp</dimen>
+<dimen name="rounded_corner_radius">3dp</dimen>
+<dimen name="text_size_micro">9sp</dimen>
+<dimen name="text_size_home_button_title">10sp</dimen>
+<dimen name="text_size_smallest">12sp</dimen>
+<dimen name="text_size_small">14sp</dimen>
+<dimen name="text_size_medium">16sp</dimen>
+<dimen name="text_size_large">18sp</dimen>
+<dimen name="text_size_largest">20sp</dimen>
+<dimen name="checkbox_border_width">2dp</dimen>
+<dimen name="checkbox_corner_radius">2dp</dimen>
+<dimen name="checkbox_width">25dp</dimen>
+<dimen name="checkbox_height">25dp</dimen>
+<dimen name="edit_text_bottom_border_height">2dp</dimen>
+<dimen name="stepped_progress_bar_height">3dp</dimen>
+<dimen name="stepped_progress_bar_divider_width">2dp</dimen>
+<dimen name="card_border_width">1dp</dimen>
+<dimen name="card_radius">2dp</dimen>
+<dimen name="card_list_view_radius">4dp</dimen>
+<dimen name="card_list_view_divider_height">1dp</dimen>
+<!-- Reusable dimensions end -->
+
+
+<!-- View specific dimensions start -->
+<dimen name="text_size_tabbar">9sp</dimen>
+<dimen name="activity_landing_buttons_layout_height">50dp</dimen>
+<dimen name="activity_landing_tabbar_layout_height">50dp</dimen>
+<dimen name="activity_landing_summary_pager_height_collapsed">70dp</dimen>
+<dimen name="activity_landing_summary_pager_height_expanded">250dp</dimen>
+<dimen name="activity_landing_remember_layout_height">40dp</dimen>
+<dimen name="activity_landing_button_height">40dp</dimen>
+<dimen name="activity_home_tab_height">40dp</dimen>
+<dimen name="activity_home_tab_height_minus">-40dp</dimen>
+<dimen name="activity_home_pager_sliding_strip_indicator_height">3dp</dimen>
+<dimen name="text_size_pager_title">14sp</dimen>
+<dimen name="notification_list_item_width">50dp</dimen>
+<dimen name="notification_list_item_height">50dp</dimen>
+<dimen name="card_list_item_card_image_height">100dp</dimen>
+<dimen name="card_list_item_divider_height">1dp</dimen>
+<dimen name="progress_dialog_radius">4dp</dimen>
+<dimen name="horizontal_scroll_view_scroll_offset">40dp</dimen>
+<dimen name="unread_image_width">10dp</dimen>
+<dimen name="unread_image_height">10dp</dimen>
+<dimen name="unread_image_margin_top">28dp</dimen>
+<dimen name="unread_image_margin_bottom">28dp</dimen>
+<dimen name="unread_image_margin_left">4dp</dimen>
+<dimen name="unread_image_margin_right">4dp</dimen>
+<dimen name="circle_search_button_radius">25dp</dimen>
+<dimen name="circle_search_button_diameter">50dp</dimen>
+<!-- Default screen margins, per the Android Design guidelines. -->
+<dimen name="activity_horizontal_margin">16dp</dimen>
+<dimen name="activity_vertical_margin">16dp</dimen>
+<dimen name="virtual_card_type_sublist_item_horizontal_margin">48dp</dimen>
+<dimen name="money_load_location_list_item_width">50dp</dimen>
+<dimen name="money_load_location_list_item_height">50dp</dimen>
+<dimen name="activity_card_detail_card_image_view_width">60dp</dimen>
+<dimen name="activity_card_detail_card_image_view_height">36dp</dimen>
+<dimen name="small_card_image_width">72dp</dimen>
+<dimen name="small_card_image_height">45dp</dimen>
+<dimen name="small_icon_size">24dp</dimen>
+<dimen name="activity_send_money_amoun_lira_edittext_width">160dp</dimen>
+<dimen name="activity_send_money_amoun_kurus_edittext_width">32dp</dimen>
+<dimen name="icon_transfer_success_size">100dp</dimen>
+<dimen name="right_arrow_size">12dp</dimen>
+<dimen name="activity_home_cards_fragment_buttons_height">80dp</dimen>
+<!-- View specific dimensions end -->
+
+</resources>
+

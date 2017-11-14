@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Para Kazandıran Zor Oyun</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_registration_email_text">E-posta</string>
+    <string name="activity_registration_tooltip_email">Kullandığınız güncel e-posta adresini yazın.</string>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- Reusable colors start -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_shadow">#EEEEEE</color>
+    <color name="ininal_yellow">#EAAF00</color>
+    <color name="ininal_yellow_shadow">#D49F00</color>
+    <color name="ininal_blue">#00AEEF</color>
+    <color name="ininal_blue_shadow">#00A3CF</color>
+    <color name="ininal_red">#EA1C24</color>
+    <color name="ininal_red_shadow">#CA181F</color>
+    <color name="light_gray">#949494</color>
+    <color name="positive_green">#009688</color>
+    <color name="negative_red">#EA554C</color>
+    <color name="lighter_gray">#F3F3F3</color>
+    <color name="divider_gray">#DDDDDD</color>
+    <color name="background_gray">#F5F5F5</color>
+    <color name="navy">#15283E</color>
+    <!-- Reusable colors end -->
+
+    <!-- View specific colors start -->
+    <color name="fragmant_loading_locations_spinner_layout_background_color">#DDFFFFFF</color>
+    <color name="activity_landing_background">#A3000000</color>
+    <color name="stepped_progress_bar_active">#637590</color>
+    <color name="stepped_progress_bar_passive">#E1E1E1</color>
+    <color name="card_border">#DFDFDF</color>
+    <color name="card_overlay_blue">#9900AEEF</color>
+    <color name="card_overlay_yellow">#99FFC20E</color>
+    <color name="card_overlay_red">#99ED1C24</color>
+    <color name="gray_button_normal">#DDDDDD</color>
+    <color name="gray_button_pressed">#BBBBBB</color>
+    <color name="tabbar_text_color">#AAAAAA</color>
+    <!-- View specific colors end -->
+</resources>
